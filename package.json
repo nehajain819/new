@@ -1,0 +1,19 @@
+{
+  "name": "ng-supdoc",
+  "version": "1.0.0",
+  "description": "supdoc automation",
+  "main": "main.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nehajain819/new.git"
+  },
+  "author": "neha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nehajain819/new/issues"
+  },
+  "homepage": "https://github.com/nehajain819/new#readme"
+}
