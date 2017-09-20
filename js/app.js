@@ -6,22 +6,34 @@ var supdoc = angular.module('supdoc', ['ngRoute']);
         $routeProvider
 
             // route for the home page
-            .when('/supdoc', {
-                templateUrl : './Components/supdoc/supdoc.component.html',
-                controller  : 'supdocController'
-            })
+            // .when('/supdoc', {
+            //     templateUrl : './Components/supdoc/supdoc.component.html',
+            //     controller  : 'supdocController'
+            // })
 
-            // route for the about page
-            .when('/user', {
-                templateUrl : './Components/user/user.component.html',
-                controller  : 'userController'
-            })
+            // // route for the about page
+            // .when('/user', {
+            //     templateUrl : './Components/user/user.component.html',
+            //     controller  : 'userController'
+            // })
 
-            // route for the contact page
+            // // route for the contact page
+            // .when('/project', {
+            //     templateUrl : './Components/project/project.component.html',
+            //     controller  : ' projectController'
+            // });
+
             .when('/project', {
-                templateUrl : './Components/project/project.component.html',
-                controller  : ' projectController'
-            });
+        template: '<projectregistration></projectregistration>'})
+        .when('/user',{
+            template: '<useregistration></useregistration>'
+        })
+        .when('/supdoc',{
+            template: '<supdoc></supdoc>'
+        })
+         .when('/', {
+        template: '<useregistration></useregistration>'})
+
     });
     supdoc.controller('supdocController', function($scope) {
         // create a message to display in our view
